@@ -347,6 +347,71 @@ p {
     .paragraph p {
         margin-top: 20px;
         text-align: justify;
-        line-height:32px;
+        line-height: 32px;
     }
+    /* exhibition page */
+    .econtainer {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .exhib {
+        flex: 46%;
+        margin: 10px;
+        height: 70vh;
+    }
+    .exhib:hover {
+        transform: scale(1.02);
+        transition: all 0.5s;
+        opacity: 0.9;
+    }
+    .exhib:hover h3 {
+        background-color: rgba(20, 20, 20, 0.4);
+    }
+    .eximg1 {
+        background: url(https://images.unsplash.com/photo-1578402025217-920675beb3c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .eximg2 {
+        background: url(https://images.unsplash.com/photo-1501270067467-8298cce1babb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .eximg3 {
+        background: url(https://images.unsplash.com/photo-1518998053901-5348d3961a04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .eximg4 {
+        background: url(https://images.unsplash.com/photo-1507643179773-3e975d7ac515?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .eximg5 {
+        background: url(https://images.unsplash.com/photo-1565041054083-45a0d4b25229?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .exhibcc h2 {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .exhib h3 {
+        /* color: #000; */
+        padding: 320px 0px 10px 16px;
+        font-size: 32px;
+    }
+    .bgc h4, p{
+        /* margin: 10px 0px 10px 16px; */
+    }
+    .bgc button {
+        margin: 0px 0px 0px 70%;
+        padding: 12px 40px;
+    }
+    .bgc h4, i {
+        color: #22c59f;
+    }
+
 }
