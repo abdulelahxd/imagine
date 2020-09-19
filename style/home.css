@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@500&display=swap");
+/* 
+text
+font-family: 'Sen', sans-serif; 
+title
+font-family: 'Inter', sans-serif;  
+
+color palette 
+#22C59F
+#000
+#3f3d56
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: #000;
+}
+a {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    text-transform: capitalize;
+}
+a:hover {
+    opacity: 0.9;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #22c59f;
+}
+h1,
+h2,
+h3 {
+    font-size: 42px;
+    font-family: "Sen", sans-serif;
+}
+p {
+    tab-size: 16px;
+    font-family: "Sen", sans-serif;
+    color: #22c59f;
+    /* line-height: 22px; */
+}
+@media (min-width: 1190px) {
+    .width {
+        margin: 0% 8% 8% 8%;
+    }
+    .flexrow {
+        display: flex;
+        justify-content: space-between;
+    }
+    .but {
+        background-color: #22c59f;
+        color: #000;
+        border: none;
+        border-radius: 30px;
+        padding: 10px 20px;
+    }
+    .but:hover {
+        box-shadow: #22c59f 0px 4px 20px -6px;
+        transform: translateY(-4px);
+        transition: all 0.5s;
+    }
+    header {
+        width: 100%;
+        height: 70px;
+        background: rgb(20, 20, 20);
+        line-height: 70px;
+    }
+    header h1 span {
+        color: #22c59f;
+    }
+    header ul {
+        min-width: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        list-style: none;
+    }
+    header ul li a {
+        text-transform: capitalize;
+    }
+    .landingpic {
+        background: url(../assets/manwithpainting.svg) no-repeat center right;
+        height: 90vh;
+    }
+    .landingpic h2 {
+        padding-top: 320px;
+        padding-left: 40px;
+        /* color: #22c59f; */
+    }
+    .landingpic p {
+        max-width: 360px;
+        line-height: 30px;
+        padding-left: 40px;
+    }
+    .landingpic button {
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    .sectwo h2 {
+        text-align: center;
+    }
+    .title p {
+        text-align: center;
+        margin: 16px 0px 40px 0px;
+    }
+    .card {
+        margin: 2%;
+        text-align: center;
+        width: 28%;
+        height: 240px;
+        background-color: rgb(20, 20, 20);
+        border-radius: 5px;
+    }
+    .card h4 {
+        font-family: "Sen", sans-serif;
+    }
+    .card p:nth-child(2) {
+        text-align: center;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .card p:nth-child(3) {
+        margin-top: 10px;
+        color: #fff;
+        line-height: 22px;
+    }
+
+    .card i {
+        font-size: 44px;
+        color: #000;
+        margin: 16px 0px 24px 0px;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .card:nth-child(odd):hover {
+        background-color: #22c59f;
+        transition: all 0.5s;
+        transform: translateY(-10px);
+        box-shadow: #22c59f 0px 4px 20px -6px;
+    }
+    .card:nth-child(even):hover {
+        background-color: rgb(104, 193, 223);
+        transition: all 0.5s;
+        transform: translateY(-10px);
+        box-shadow: rgb(104, 193, 223) 0px 4px 20px -6px;
+    }
+    .semipara {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .semipara img {
+        width: 50%;
+    }
+    .semipara div {
+        margin-left: 8%;
+    }
+    .semipara div p {
+        max-width: 400px;
+        line-height: 36px;
+    }
+    .secfour {
+        background-color: rgb(10, 10, 10);
+    }
+    .semiparatwo {
+        display: flex;
+        flex-direction: column;
+    }
+    .semiparatwo img {
+        height: 400px;
+    }
+    .semiparatwo h2 {
+        margin: auto;
+        margin-top: 20px;
+    }
+    .about {
+        margin-top: 40px;
+    }
+    .about p {
+        max-width: 400px;
+        line-height: 36px;
+    }
+    .about img {
+        margin-bottom: 20px;
+    }
+    .about button {
+        margin-top: 14px;
+    }
+    .flexrowOne {
+        display: flex;
+        justify-content: space-around;
+    }
+    /* secfive */
+    .profilecard {
+        width: 24%;
+        /* height: 360px; */
+    }
+    .profilecard:hover {
+        transform: scale(1.04);
+        transition: all 0.5s;
+        opacity: 0.7;
+    }
+    .profiles h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .profiles h3 {
+        font-size: 28px;
+    }
+    .personOne {
+        background-image: url(../assets/person-one.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .personTwo {
+        background-image: url(../assets/person-two.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .personThree {
+        background-image: url(../assets/person-three.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 50px;
+    }
+    .profilecard div {
+        margin-top: 340px;
+    }
+    .profilecard div p {
+        color: #fff;
+        margin: 10px 0px;
+        line-height: 20px;
+    }
+    .profilecard div p span {
+        color: #22c59f;
+    }
+    footer {
+        background-color: rgb(10, 10, 10);
+        height: 44vh;
+    }
+    .mgn {
+        padding-top: 50px;
+    }
+    .flexfooter {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .logo {
+        max-width: 200px;
+    }
+    .logo h1 {
+        margin-bottom: 12px;
+    }
+    .logo a span {
+        color: #22c59f;
+    }
+    .explore {
+        max-width: 200px;
+    }
+    .explore ul {
+        list-style: none;
+        line-height: 32px;
+    }
+    .widthfoo {
+        margin: 0% 8%;
+    }
+    .arrowup {
+        font-size: 24px;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+    }
+    .arrowup:hover {
+        color: #22c59f;
+        transform: scale(1.5);
+        transition: all 0.5s;
+    }
+    /* gallery page */
+    .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 8px;
+    }
+    .column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+    .column img:hover {
+        opacity: 0.8;
+    }
+    /* artists page */
+    /* news page */
+    .ncontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .ncontainer h2 {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .ncard {
+        border-radius: 8px;
+        width: 100%;
+        background-color: rgb(20, 20, 20);
+        margin: 2%;
+        padding: 2% 4%;
+        line-height: 40px;
+    }
+    .ncard img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }
+    .ncard img:hover {
+        transform: scale(1.1);
+        transition: all 0.5s;
+    }
+    /* about us page */
+    .aboutus h2 {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .paragraph p {
+        margin-top: 20px;
+        text-align: justify;
+        line-height:32px;
+    }
+}
