@@ -366,9 +366,9 @@ p {
         transition: all 0.5s;
         opacity: 0.9;
     }
-    .exhib:hover h3 {
+    /* .exhib:hover h3 {
         background-color: rgba(20, 20, 20, 0.4);
-    }
+    } */
     .eximg1 {
         background: url(https://images.unsplash.com/photo-1578402025217-920675beb3c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
         background-repeat: no-repeat;
@@ -403,8 +403,8 @@ p {
         padding: 320px 0px 10px 16px;
         font-size: 32px;
     }
-    .bgc h4, p{
-        /* margin: 10px 0px 10px 16px; */
+    .mg {
+        margin: 10px 0px 10px 16px;
     }
     .bgc button {
         margin: 0px 0px 0px 70%;
@@ -413,5 +413,47 @@ p {
     .bgc h4, i {
         color: #22c59f;
     }
-
+    /* artists */
+    .artists h2 {
+        margin: 40px 0px;
+        text-align: center;
+    }
+    .acontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .acard {
+        margin: 20px;
+        border-radius: 12px;
+        background-color: rgb(20, 20, 20);
+        flex: 50%;
+    }
+    .acard:hover {
+        background-color: rgb(20, 20, 20,0.6);
+        transform: translateY(-4px);
+        transition: all 0.5s;
+        
+    }
+    .acard img {
+        vertical-align: middle;
+        object-fit: cover;
+        float: right;
+        border-radius: 12px;
+        width: 400px;
+        height: 400px;
+        margin: 0px 0px 0px 0px;
+    }
+    .acard h3 {
+        margin: 60px 0px 40px 40px;
+    }
+    .acard p {
+        max-width: 50%;
+        /* overflow: hidden; */
+        margin: 40px 40px;
+        line-height: 34px;
+    }
+    .acard button {
+        margin: 0px 40px 40px 40px;
+    }
 }
